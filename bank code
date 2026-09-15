@@ -1,0 +1,37 @@
+//a program to test whether the bank user qualify for loan or not.
+
+/*
+(Multi line Comment)
+Author:Stephen Ongubo
+Registration no:BCS-05-0536/2026
+Desciption:A program testing whether the bank user qualify for loan or not.
+Date:15/09/2026
+Version 1
+*/
+
+//Pre processor directive
+#include <stdio.h>
+
+int main () {
+    //  a program to test whether the bank user qualifies for loan or not
+    int age;
+    float income;
+    
+    printf("Enter your age: ");
+    scanf("%d", & age);
+    
+    printf("Enter your income: ");
+    scanf("%f", & income);
+    
+    if(age >=28 && income >= 30,000)
+{
+printf("Congratulations!!!You have qualified for loan\n");
+}
+else
+{
+printf("Sorry!!Your loan application has been declined \n ");
+}
+
+return 0; 
+
+}
