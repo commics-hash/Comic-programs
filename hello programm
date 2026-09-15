@@ -1,0 +1,28 @@
+//A program to display the registered units this semester
+
+/*
+(Multiline Comment)
+Author.Ongubo Stephen.
+Registration no:BCS-05-0536/2026
+Description:A program showing the registered units this semester
+Version 1.
+*/
+
+//Pre processer directives
+#include <stdio.h>
+
+int main () {
+//Program to display the registered units.
+printf("Computational logic /n");
+printf("Structured Programing and Alogarithms /n");
+printf("Basic Mathematics /n");
+printf("Introduction to physics /n");
+printf("Digital literacy /n");
+printf("Health and wellness /n");
+printf("Communication skills /n");
+
+return 0;
+
+}
+    
+
