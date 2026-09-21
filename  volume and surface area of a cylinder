@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+#define PI 3.14159
+
+int main() {
+    double radius, height;
+    double volume, surfaceArea;
+
+    // Ask the user to enter radius and height
+    printf("Enter the radius of the cylinder: ");
+    scanf("%lf", &radius);
+
+    printf("Enter the height of the cylinder: ");
+    scanf("%lf", &height);
+
+    // Calculate volume
+    volume = PI * radius * radius * height;
+
+    // Calculate surface area
+    surfaceArea = 2 * PI * radius * radius + 2 * PI * radius * height;
+
+    // Display results
+    printf("\nVolume = %.2f\n", volume);
+    printf("Surface Area = %.2f\n", surfaceArea);
+
+    return 0;
+}
+
