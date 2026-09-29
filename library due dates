@@ -1,0 +1,40 @@
+/*
+Author:Stephen Ongubo
+Registration no:BCS-05-0536/2026
+Description:a program to calculate the fine for overdue library
+Upto 7 days,the charges is Ksh.20
+8-14 days,the charges is Ksh.50
+15 days or more,the charges is Ksh.100
+Date:29/09/2026
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    float bookID,fineRate,fineAmount,dueDate,returnDate,daysOverdue;
+    printf("Enter the bookID:\t");
+    scanf("%f",&bookID);
+    
+    printf("Enter the dueDate:\t");
+    scanf("%f",&dueDate);
+    
+   printf("Enter the returnDate:\t");
+   scanf("%f",&returnDate);
+   daysOverdue=returnDate - dueDate;
+   if(daysOverdue<=7)
+   {
+       fineAmount=20;
+   }
+   else if(daysOverdue <=14)
+   {
+       fineAmount= 50;
+   }
+   else
+   {
+      fineAmount=100;
+   }
+   printf("daysOverdue=%f\n",daysOverdue);
+   printf("fineAmount Ksh:%f\n",fineAmount);
+   return 0 ;
+}
