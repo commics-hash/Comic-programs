@@ -1,0 +1,23 @@
+/*Author:Stephen Ongubo
+Registration no:BCS-05-0536/2026
+Description:Attendance average marks
+*/
+#include <stdio.h>
+
+int main(void) {
+    float attendance, averageMarks;
+
+    printf("Enter attendance percentage: ");
+    scanf("%f", &attendance);
+
+    printf("Enter average marks: ");
+    scanf("%f", &averageMarks);
+
+    if (attendance >= 75 && averageMarks >= 40) {
+        printf("Eligible for final exams.\n");
+    } else {
+        printf("Not eligible.\n");
+    }
+
+    return 0;
+}
